@@ -84,16 +84,14 @@ function displayArticles(articlesToReturn){
             }
            
         }    
-
-
+        
         return `<div class="relevantArticles uk-card uk-card-default uk-card-hover uk-card-body">
         <h2>${article.headline.main ? article.headline.main : "Title Unknown"}</h2>
         <h4>${authorName}</h4>
         <p>${article.snippet ? article.snippet : "Snippet Unavailable"}</p>
         <a target ="_blank" href="${article.web_url}">${article.web_url ? "Read Article": "#"}</a>
         <p>${article.news_desk ? article.news_desk : "News Desk Unavailable"}</p>
-        <button id="btnFavorite"><span uk-icon="icon: heart"></span></button>
-
+        <button id="btnFavorite" onclick="changeColor()"><span uk-icon="icon: heart"></span></button>
         </div>`  
 
         })

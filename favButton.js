@@ -6,7 +6,7 @@ let usersRef = database.ref('users')
 btnLogout.addEventListener('click', e => {
     auth.signOut()
     .then(() => {
-        window.location.href = "index1.html";
+        window.location.href = "login.html";
     })
     .catch(error => {
         console.log(error)
@@ -26,22 +26,28 @@ function changeColor() {
 let favoriteRef = null
 
 btnFavorite.addEventListener('click', function(){
-    let favorite = new Favorite("1234", "Hello", "World", "brian", "www.brian.brian")  
+    let headline = 
+    let byline =
+    let snippet =
+    let newsDesk =
+    let articleURL = 
+
+    let favorite = new Favorite(headline, byline, snippet, newsDesk, articleURL)  
     if(btnFavorite.style.color == "red") {
         database.ref(`users/${uid}/favorites/${this.className}`).remove()
     } else {
-        favoriteRef = usersRef.child('f02akz70crTLktn8aC9QALUjgUz1').child("favorites").push(favorite)
+        favoriteRef = usersRef.child(user.uid).child("favorites").push(favorite)
         btnFavorite.className = favoriteRef.getKey()
     }
     changeColor()
 })
 
 class Favorite {
-    constructor(favoriteId, headline, byline, snippet, url) {
-        this.favoriteId = favoriteId 
+    constructor(headline, byline, snippet, newsDesk, articleURL) {
         this.headline = headline 
-        this.byline = byline
+        this.byline = byline 
         this.snippet = snippet
-        this.url = url 
+        this.newsDesk = newsDesk
+        this.articleURL = articleURL 
     }
 }
