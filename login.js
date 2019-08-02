@@ -21,7 +21,7 @@ btnLogin.addEventListener('click', x => {
     const promise = firebase.auth().signInWithEmailAndPassword(email, password);
     promise
     .then(() => {
-        window.location.href = "welcomepage1.html";
+        window.location.href = "home.html";
     })
     .catch(error => console.log(error.message));
     
@@ -40,7 +40,7 @@ btnSignUp.addEventListener('click', x => {
         console.log(response)
         let uid = auth.currentUser.uid
         saveUser(uid)
-        window.location.href = "welcomepage1.html";
+        window.location.href = "home.html";
     })
     .catch(error => {
         alert(error.message)

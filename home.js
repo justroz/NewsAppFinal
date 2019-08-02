@@ -92,7 +92,7 @@ function displayArticles(articlesToReturn){
         <p>${article.snippet ? article.snippet : "Snippet Unavailable"}</p>
         <a target ="_blank" href="${article.web_url}">${article.web_url ? "Read Article": "#"}</a>
         <p>${article.news_desk ? article.news_desk : "News Desk Unavailable"}</p>
-        <span uk-icon="icon: heart"></span>
+        <button id="btnFavorite"><span uk-icon="icon: heart"></span></button>
 
         </div>`  
 
