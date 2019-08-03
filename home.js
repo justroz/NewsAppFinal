@@ -91,12 +91,13 @@ function displayArticles(articlesToReturn){
         }    
         
         return `<div class="relevantArticles uk-card uk-card-default uk-card-hover uk-card-body">
-        <span>${article.headline.main ? article.headline.main : "Title Unknown"}</span>
-        <span>${authorName}</span>
-        <span>${article.snippet ? article.snippet : "Snippet Unavailable"}</span>
-        <a target ="_blank" href="${article.web_url}">${article.web_url ? "Read Article": "#"}</a>
-        <span>${article.news_desk ? article.news_desk : "News Desk Unavailable"}</span>
-        <button id='${article._id}' onclick="favoriteClicked('${article.headline.main}', '${authorName}', '${article.snippet}', '${article.news_desk}', '${article.web_url}', '${article._id}')">&hearts;</button>
+        <h3 class="articleTitle  uk-margin-small">${article.headline.main ? article.headline.main : "Title Unknown"}</h3> 
+        <span class="articleFavButton"><button id='${article._id}' onclick="favoriteClicked('${article.headline.main}', '${authorName}', '${article.snippet}', '${article.news_desk}', '${article.web_url}', '${article._id}')" uk-icon="icon: heart"></button></span>
+        <h4 class="articleAuthor  uk-margin-small">${authorName}</h4></span>
+        <p class="articleSnippet  uk-margin-small">${article.snippet ? article.snippet : "Snippet Unavailable"}</p>
+        <a class="articleURL  uk-margin-small" target ="_blank" href="${article.web_url}">${article.web_url ? "Read Article": "#"}</a> <br>
+        <span class="articleNewsDesk  uk-margin-small">${article.news_desk ? article.news_desk : "News Desk Unavailable"}</span>
+        
         </div>`  
         })
     }
