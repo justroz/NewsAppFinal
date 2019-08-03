@@ -36,13 +36,13 @@ Password: password
 
 OnThisDay was developd by the following individuals:
 
-A [Robert McCutchen]: (https://github.com/RobertMcCutch)
+ [Robert McCutchen]: (https://github.com/RobertMcCutch)
 
-A [Kelly Benson]: (https://github.com/kelz877)
+ [Kelly Benson]: (https://github.com/kelz877)
 
-A [Roz Webb]: (https://github.com/justroz)
+ [Roz Webb]: (https://github.com/justroz)
 
-A [Carine Ngwekwe]: (https://github.com/carinevic)
+ [Carine Ngwekwe]: (https://github.com/carinevic)
 
 
 ## Project Status
