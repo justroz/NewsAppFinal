@@ -36,6 +36,7 @@ Password: password
 
 
 ## Authors and acknowledgement
+
 OnThisDay was developd by the following individuals:
 
 [Robert McCutchen]: (https://github.com/RobertMcCutch)
