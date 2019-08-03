@@ -2,7 +2,6 @@ const txtEmail = document.getElementById('txtEmail');
 const txtPassword = document.getElementById('txtPassword');
 const btnLogin = document.getElementById('btnLogin');
 const btnSignUp = document.getElementById('btnSignUp');
-const errorMessage = document.getElementById('errorMessage');
 
 let usersRef = database.ref('users')
 
@@ -38,7 +37,7 @@ btnSignUp.addEventListener('click', x => {
     promise
     .then((response) => {
         console.log(response)
-        let uid = auth.currentUser.uid
+        let uid = firebase.auth().currentUser.uid
         saveUser(uid)
         window.location.href = "home.html";
     })
@@ -47,17 +46,15 @@ btnSignUp.addEventListener('click', x => {
     });
 })
 
+//Save user
 function saveUser(uid) {
-    let user = new User(uid)
+    // let user = new User(uid)
     usersRef.child(uid).set({
-        uid: uid,
+        uid: uid
     })
-
-    //usersRef.push(user)
-    //.then(res => console.log('user saved'))
-    //.catch(error => console.log(error))
 }
 
+//User class
 class User {
     constructor(uid) {
         this.userId = uid
