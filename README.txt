@@ -1,8 +1,8 @@
-###Name
-##OnThisDay 
+
+# OnThisDay
 
 
-###Description
+## Description
 
 OnThisDay is a web application that gives detailed news headlines about a day in history.
 You input a search date between 1851 and the present day and a list of articles from that day is returned.
@@ -13,22 +13,22 @@ Email: guest@gmail.com
 Password: password
 
 
-###Technologies Used
--JavaScript
--HTML
--CSS
--UIkit (CSS framework)
--Google Firebase
--Surge.sh
+## Technologies Used
+- JavaScript
+- HTML
+- CSS
+- UIkit (CSS framework)
+- Google Firebase
+- Surge.sh
 
 
-###Visuals
+## Visuals
 
 ![the display of the article ](/assets/images/homeScreenshot.png)
 ![The login page](/assets/images/loginScreenshot.png)
 
 
-###Installation
+## Installation
 
 -Visual Studio Code was used for this project
 -VS Code is a free code editor which runs on the macOS, Linux and Windows operating systems.
@@ -36,15 +36,15 @@ Password: password
 
 
 
-###Authors and acknowledgement
+## Authors and acknowledgement
 The Amazing team that put this master piece of work are as follows:
--[Robert McCutchen]: (https://github.com/RobertMcCutch)**
--[Kelly Benson]: (https://github.com/kelz877)**
--[Roz Webb]: (https://github.com/justroz)**
--[Carine Ngwekwe]: (https://github.com/carinevic)**
+- [Robert McCutchen]: (https://github.com/RobertMcCutch)**
+- [Kelly Benson]: (https://github.com/kelz877)**
+- [Roz Webb]: (https://github.com/justroz)**
+- [Carine Ngwekwe]: (https://github.com/carinevic)**
 
 
 
-###Project Status
+## Project Status
 OnThisDay is a functioning webpage published on Surge.sh
 bckrnews.surge.sh
