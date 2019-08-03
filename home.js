@@ -1,4 +1,4 @@
-let btnLogout = document.getElementById('btnLogout');
+let btnLogout = document.getElementById("btnLogout");
 let articleDisplay = document.getElementById("articleDisplay")
 let maxDay = document.getElementById("dateInput")
 let dateInput = document.getElementById("dateInput")
@@ -18,7 +18,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
 
 //Adds functionality to logout button
 btnLogout.addEventListener('click', e => {
-    auth.signOut()
+    firebase.auth().signOut()
     .then(() => {
         window.location.href = "login.html";
     })
@@ -77,10 +77,9 @@ function filterArticles(articles) {
 function displayArticles(articlesToReturn){
     let countOfArticles = `<div>Your search returned ${articlesToReturn.length} articles.</div>`
     articleCount.innerHTML = countOfArticles
-    if(articlesToReturn.length < 1){
-        return articleDisplay.innerHTML = `<div class="noDataDiv">Sorry, your search return no articles.</div>`
+    
         
-    }else if(articlesToReturn.length >= 1) { 
+    if(articlesToReturn.length >= 1) { 
         searchedArticles = articlesToReturn.map(article => {    
         let authorName = ""    
         if(article.byline) {
@@ -147,7 +146,7 @@ async function submitFunction() {
 
     let displayTheDate = dateDisplay(monthToSearch, dayToSearch, yearToSearch)
 
-    displayDate.innerHTML = displayTheDate
+    displayDate.innerHTML = `The date being displayed is: ${displayTheDate}`
 
     let articles = await retrieveArticles(newsURL)
     let articlesToReturn = filterArticles(articles)

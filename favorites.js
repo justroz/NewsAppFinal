@@ -46,7 +46,7 @@ function displayFavoritedArticles(articles){
 
 //Adds functionality to logout button
 btnLogout.addEventListener('click', e => {
-    auth.signOut()
+    firebase.auth().signOut()
     .then(() => {
         window.location.href = "login.html";
     })
