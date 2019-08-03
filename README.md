@@ -1,5 +1,5 @@
 
-# OnThisDay
+# OnThisDay - a news headline search application
 
 
 ## Description
@@ -14,12 +14,12 @@ Password: password
 
 
 ## Technologies Used
-- JavaScript
-- HTML
-- CSS
-- UIkit (CSS framework)
-- Google Firebase
-- Surge.sh
+* JavaScript
+* HTML
+* CSS
+* UIkit (CSS framework)
+* Google Firebase
+* Surge.sh
 
 
 ## Visuals
@@ -30,21 +30,21 @@ Password: password
 
 ## Installation
 
--Visual Studio Code was used for this project
--VS Code is a free code editor which runs on the macOS, Linux and Windows operating systems.
+* Visual Studio Code was used for this project
+* VS Code is a free code editor which runs on the macOS, Linux and Windows operating systems.
  
 
 
 
 ## Authors and acknowledgement
-The Amazing team that put this master piece of work are as follows:
-- [Robert McCutchen]: (https://github.com/RobertMcCutch)**
-- [Kelly Benson]: (https://github.com/kelz877)**
-- [Roz Webb]: (https://github.com/justroz)**
-- [Carine Ngwekwe]: (https://github.com/carinevic)**
+OnThisDay was developd by the following individuals:
+* [Robert McCutchen]: (https://github.com/RobertMcCutch)**
+* [Kelly Benson]: (https://github.com/kelz877)**
+* [Roz Webb]: (https://github.com/justroz)**
+* [Carine Ngwekwe]: (https://github.com/carinevic)**
 
 
 
 ## Project Status
 OnThisDay is a functioning webpage published on Surge.sh
-bckrnews.surge.sh
+http://www.bckrnews.surge.sh
