@@ -48,7 +48,7 @@ function displayFavoritedArticles(articles){
 btnLogout.addEventListener('click', e => {
     firebase.auth().signOut()
     .then(() => {
-        window.location.href = "login.html";
+        window.location.href = "index.html";
     })
     .catch(error => {
         console.log(error)

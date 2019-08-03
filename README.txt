@@ -47,3 +47,4 @@ The Amazing team that put this master piece of work are as follows:
 
 ###Project Status
 OnThisDay is a functioning webpage published on Surge.sh
+bckrnews.surge.sh
