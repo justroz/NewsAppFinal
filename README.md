@@ -24,8 +24,8 @@ Password: password
 
 
 ## Visuals
-![the display of the article ](/newsAppFinal/images/homeScreenshot.png)
-![The login page](/newsAppFinal/images/loginScreenshot.png)
+![the display of the article ](newsAppFinal/images/homeScreenshot.png)
+![The login page](newsAppFinal/images/loginScreenshot.png)
 
 
 ## Installation
