@@ -37,10 +37,38 @@ body {
     padding: 5px;
     border-radius: 7px;
     opacity: .97;
-
-    
+ 
 }
 
+
+footer {
+    background-color: lightgray;
+    color: gray;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+ }
+#footerSpan {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: space-evenly;
+ }
+
+footer a  {
+     text-decoration: none;
+ }
+
+#btnLogout {
+    padding-bottom: 1vw;
+}
+
+#btnFavorite {
+    padding-bottom: 1vw;
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -65,4 +93,13 @@ body {
         margin-left: 2vw;
         margin-right: 2vw;
     }
+    footer {
+        position: fixed;
+    }
+    #displayData{
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+
   }
