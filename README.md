@@ -3,7 +3,6 @@
 
 
 ## Description
-
 OnThisDay is a web application that gives detailed news headlines about a day in history.
 You input a search date between 1851 and the present day and a list of articles from that day is returned.
 You can also input the section of the news that you want to search. Say you only want sports articles on a certain day, OnThisDay will return only the sports articles. Other news sections include Food, Fashion, Education, Arts, and many more! The New York Times API was used to develop this app and can be accessed here: https://developer.nytimes.com/
@@ -25,13 +24,11 @@ Password: password
 
 
 ## Visuals
-
 ![the display of the article ](/assets/images/homeScreenshot.png)
 ![The login page](/assets/images/loginScreenshot.png)
 
 
 ## Installation
-
 * Visual Studio Code was used for this project
 * VS Code is a free code editor which runs on the macOS, Linux and Windows operating systems.
  
@@ -40,10 +37,10 @@ Password: password
 
 ## Authors and acknowledgement
 OnThisDay was developd by the following individuals:
-* [Robert McCutchen]: (https://github.com/RobertMcCutch)
-* [Kelly Benson]: (https://github.com/kelz877)
-* [Roz Webb]: (https://github.com/justroz)
-* [Carine Ngwekwe]: (https://github.com/carinevic)
+[Robert McCutchen]: (https://github.com/RobertMcCutch)
+[Kelly Benson]: (https://github.com/kelz877)
+[Roz Webb]: (https://github.com/justroz)
+[Carine Ngwekwe]: (https://github.com/carinevic)
 
 
 
