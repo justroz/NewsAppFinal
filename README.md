@@ -1,5 +1,4 @@
-
-# OnThisDay - a news headline search application
+# OnThisDay - A news headline search application
 
 
 ## Description
@@ -31,22 +30,19 @@ Password: password
 ## Installation
 * Visual Studio Code was used for this project
 * VS Code is a free code editor which runs on the macOS, Linux and Windows operating systems.
- 
-
 
 
 ## Authors and acknowledgement
 
 OnThisDay was developd by the following individuals:
 
-[Robert McCutchen]: (https://github.com/RobertMcCutch)
+A [Robert McCutchen]: (https://github.com/RobertMcCutch)
 
-[Kelly Benson]: (https://github.com/kelz877)
+A [Kelly Benson]: (https://github.com/kelz877)
 
-[Roz Webb]: (https://github.com/justroz)
+A [Roz Webb]: (https://github.com/justroz)
 
-[Carine Ngwekwe]: (https://github.com/carinevic)
-
+A [Carine Ngwekwe]: (https://github.com/carinevic)
 
 
 ## Project Status
