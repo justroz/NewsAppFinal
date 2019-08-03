@@ -66,12 +66,13 @@ footer a  {
 
 #btnLogout {
     padding-bottom: 1vw;
+    color: black;
 }
 
 #btnFavorite {
     padding-bottom: 1vw;
+    color: black;
 }
-
 
 
 .articleTitle {
