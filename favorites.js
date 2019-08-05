@@ -31,12 +31,12 @@ function displayFavoritedArticles(articles){
         favoritedArticles = articles.map(article => {   
             console.log(article) 
             return `<div class="relevantArticles uk-card uk-card-default uk-card-hover uk-card-body">
-                    <span>${article.headline ? article.headline : "Title Unknown"}</span>
-                    <span>${article.byline}</span>
-                    <span>${article.snippet ? article.snippet : "Snippet Unavailable"}</span>
-                    <a target ="_blank" href="${article.articleURL}">${article.articleURL ? "Read Article": "#"}</a>
-                    <span>${article.newsDesk ? article.newsDesk : "News Desk Unavailable"}</span>
-                    <button id='${article._id}' onclick="deleteFavorite('${article.key}')">Delete</button>
+                    <h3 class="articleTitle">${article.headline ? article.headline : "Title Unknown"}</h3>
+                    <h4 class="articleAuthor">${article.byline}</h4>
+                    <p class="articleSnippet">${article.snippet ? article.snippet : "Snippet Unavailable"}</p>
+                    <a class="articleURL" target ="_blank" href="${article.articleURL}">${article.articleURL ? "Read Article": "#"}</a><br>
+                    <span class="articleNewsDesk">${article.newsDesk ? article.newsDesk : "News Desk Unavailable"}</span><br>
+                    <button class="articleDelete" id='${article._id}' onclick="deleteFavorite('${article.key}')">Delete</button>
                     </div>`  
         })
         articleDisplay.innerHTML = favoritedArticles.join("")
