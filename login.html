@@ -1,18 +1,39 @@
 <html>
     <head>
-        <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
         <link rel="stylesheet" href="login.css"></link>
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div id="container">
-            <input id="txtEmail" type="email" placeholder="Email" required>
-            <input id="txtPassword" type="password" placeholder="Password" required>
-            <button id="btnLogin" class="btn btn-action">Log in</button>
-            <button id="btnSignUp" class="btn btn-secondary"> Sign up</button>
+            <div id="titleContainer">
+                <img src="images/NYTlogo.png" id="NYTlogo"/>
+                <span id="projectTitle">NewsApp</span>
+                <span id="byline"><i>The best way to search the NYT archives!</i></span>
+            </div>
+            <div id="loginContainer">
+                <div id="loginPanel">
+                    <div id="inputFields">
+                        <input id="txtEmail" type="email" placeholder="Email" required>
+                        <input id="txtPassword" type="password" placeholder="Password" required>
+                    </div>
+                    <div id="loginButtons">
+                        <button id="btnLogin" class="btn btn-action">Log in</button>
+                        <button id="btnSignUp" class="btn btn-secondary"> Sign up</button>
+                        <a href="home.html">Guest</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <script src="auth.js"></script>
+        <footer>
+            <div id="footerSpan">
+                <span>By: <a href="https://github.com/RobertMcCutchen">Brian,</a> <a href="https://github.com/justroz">Roz,</a> <a href="https://github.com/kelz877">Kelly,</a> and <a href="https://github.com/carinevic">Carine</a> &copy; 2019</span>
+            </div>
+        </footer>
+        <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+        <script src="authentication.js"></script>
         <script src="login.js"></script>
     </body>
 </html>

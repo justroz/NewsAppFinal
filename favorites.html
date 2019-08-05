@@ -1,72 +1,35 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>NewsApp</title>
-        <meta charset="utf-8">
+        <link rel="stylesheet" href="favorites.css">
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="home.css">
-        <link rel="stylesheet" href="css/uikit.min.css" />
-        <script src="js/uikit.min.js"></script>
-        <script src="js/uikit-icons.min.js"></script>
     </head>
-
     <body>
-        <div id="container">
-
-        
-        <nav class="uk-navbar-container uk-margin" uk-navbar>
-                <div class="uk-navbar-left">
-                    <a class="uk-navbar-item uk-logo" href="https://developer.nytimes.com/apis" target="_blank"><img src="images/logo.png"></a>
-                    
-                
-                    <ul class="uk-navbar-nav">
-                        <li>
-                            <a href="home.html">
-                                <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span>
-                                MAIN
-                            </a>
-                        </li>
-                    </ul>
-            
-                    <div class="uk-navbar-item">
-                        <div>Log Out</div>
-                    </div>
-               
-
-                    
-                        </div>
-                    </form>
-                    </div>
+        <header>
+            <nav>
+                <img src="images/NYTlogo.png" id="NYTlogo"/>
+                <div id="otherButtons">
+                    <a href="home.html" id="favoriteLink">Home<i class="fas fa-cloud"></i></a>
+                    <button id="btnLogout">Log Out</button>
                 </div>
             </nav>
-
-
-        
-        
-        
-        <div id="articleDisplay">
-        
-        
+            <div id="articleCountDisplay">
+                <span id="articleCount"></span>
+            </div>
+        </header>
+        <div id="articleDisplayContainer">
+            <div id="articleDisplay"></div>
         </div>
-        
-        
-
-
-
         <footer>
-            <span id="footerSpan">
-                <span>By: </span>
-                <a href="https://github.com/RobertMcCutchen">Brian,</a>
-                <a href="https://github.com/justroz">Roz, </a>
-                <a href="https://github.com/kelz877">Kelly,</a>
-                <span>and </span>
-                <a href="https://github.com/carinevic">Carine</a>
-                <span>&copy; 2019</span>
-            </span>
+            <div id="footerSpan">
+                <span>By: <a href="https://github.com/RobertMcCutchen">Brian,</a> <a href="https://github.com/justroz">Roz,</a> <a href="https://github.com/kelz877">Kelly,</a> and <a href="https://github.com/carinevic">Carine</a> &copy; 2019</span>
+            </div>
         </footer>
-        
-</div>
-
-<script src="home.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+        <script src="authentication.js"></script>
+        <script src="favorites.js"></script>
+        <script src="favButton.js"></script>
     </body>
 </html>

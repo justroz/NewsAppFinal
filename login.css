@@ -1,0 +1,264 @@
+html { 
+    background: url("images/backgroundImage.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body{
+    height: 100%;
+    margin: 0%;
+}
+
+#container {
+    background: url("images/wrinkled-paper-transparency.png") no-repeat center center fixed;
+    background-size: cover;
+    align-content: center;
+    background-color: lightgray;
+    height: 90%;
+    margin: 3vw 5vw 5vw 5vw;
+    border: 1px solid gray;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#titleContainer {
+    max-height: 40vw;
+    width: 100%;
+    margin-bottom: 3%; 
+    overflow: hidden;  
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#NYTlogo {
+    width: 200px;
+}
+
+#projectTitle {
+    color: black;
+    font-family: 'Crimson Pro', serif;
+    max-height: 50%;
+    height: 15vw;
+    font-size: 17vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0%;
+    min-width: 250px;
+}
+
+#byline {
+    font-size: 2vw;
+    height: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vw;
+    margin-bottom: 1vw;
+    min-height: 20px;
+}
+#loginContainer {
+    width: 100%;
+    height: 30%;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginPanel {
+    display: flex;
+    background-color: #F0F0F0;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid gray;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#inputFields {
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#txtEmail {
+    height: 7vw;
+    font-size: 3vw;
+    margin: 5px 10px 5px 5px;
+    border: 1px solid gray;
+    padding-left: 2vw;
+    font-family: monospace;
+    max-height: 50px;
+}
+
+#txtPassword {
+    height: 7vw;
+    font-size: 3vw;
+    margin: 5px 10px 5px 5px;
+    border: 1px solid gray;
+    padding-left: 2vw;
+    font-family: monospace;
+    max-height: 50px;
+}
+
+#loginButtons {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    width: 20vw;
+    justify-content: space-around;
+    position: relative;
+}
+
+#btnLogin {
+    margin: 0px 1vw 0px 1vw;
+    width: 20vw;
+    height: 25%;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3vw;
+}
+
+#btnSignup {
+    margin: 0px 1vw 0px 1vw;
+    width: 20vw;
+    height: 25%;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3vw;
+}
+
+button {
+    background-color: gray;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: lightgray;
+    color: gray;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+}
+
+#footerSpan {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: space-evenly;
+} 
+
+@media only screen and (min-width: 701px) {
+
+#loginPanel {
+    flex-direction: row;
+    width: 50vw;
+}
+
+#inputFields {
+    width: 50%;
+}
+}
+
+@media only screen and (max-width: 700px) {
+
+#container {
+    margin-top: 5vw;   
+}
+
+#byline {
+    font-size: 5vw;
+}
+
+#loginPanel {
+    width: 100%;
+}
+
+#inputFields {
+    width: 50%;
+}
+
+}
+
+@media only screen and (max-width: 360px) {
+
+#loginContainer {
+    height: 50%;
+    align-items: middle;
+}
+
+#loginPanel {
+    top: 10%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#inputFields {
+    top: 20vw;
+    width: 95%;
+    margin-right: 10px;
+}
+
+#txtEmail {
+    height: 8vw;
+    font-size: 5vw;
+}
+
+#txtPassword {
+    height: 8vw;
+    font-size: 5vw;
+}
+
+#loginButtons {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+}
+
+#btnLogin {
+    margin: 0px 1vw 0px 1vw;
+    width: 80vw;
+    height: auto;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 6vw;
+}
+
+#btnSignup {
+    margin: 2vw;
+    width: 80vw;
+    height: auto;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 6vw;
+}
+
+}

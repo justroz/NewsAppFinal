@@ -1,46 +1,32 @@
-const btnLogout = document.getElementById('btnLogout');
-const btnFavorite = document.getElementById('btnFavorite')
+let btnFavorite = document.getElementById('btnFavorite')
 
 let usersRef = database.ref('users')
 
-btnLogout.addEventListener('click', e => {
-    auth.signOut()
-    .then(() => {
-        window.location.href = "login.html";
-    })
-    .catch(error => {
-        console.log(error)
-    })
-});
-
 let favorites = []
 
-function changeColor() {
-    let heartColor = document.getElementById('btnFavorite').style.color;
-    if (heartColor == "red") {
-        document.getElementById('btnFavorite').style.color = "gray"
+function changeColor(articleId) {
+    let heartButton = document.getElementById(articleId);
+    if (heartButton.style.color == "red") {
+        heartButton.style.color = "gray"
     } else {
-        document.getElementById('btnFavorite').style.color = "red"
+        heartButton.style.color = "red"
     }
 }
 let favoriteRef = null
 
-btnFavorite.addEventListener('click', function(){
-    let headline = 
-    let byline =
-    let snippet =
-    let newsDesk =
-    let articleURL = 
-
-    let favorite = new Favorite(headline, byline, snippet, newsDesk, articleURL)  
-    if(btnFavorite.style.color == "red") {
-        database.ref(`users/${uid}/favorites/${this.className}`).remove()
+function favoriteClicked (headline, byline, snippet, newsDesk, articleURL, articleId) { 
+    let uid= firebase.auth().currentUser.uid
+    let favorite = new Favorite(headline, byline, snippet, newsDesk, articleURL)
+    let heartButton = document.getElementById(articleId);
+    if(heartButton.style.color == "red") {
+        database.ref(`users/${uid}/favorites/${heartButton.className}`).remove()
     } else {
-        favoriteRef = usersRef.child(user.uid).child("favorites").push(favorite)
-        btnFavorite.className = favoriteRef.getKey()
+        favoriteRef = usersRef.child(uid).child("favorites").push(favorite)
+        heartButton.className = favoriteRef.getKey()
     }
-    changeColor()
-})
+    changeColor(articleId)
+}
+
 
 class Favorite {
     constructor(headline, byline, snippet, newsDesk, articleURL) {

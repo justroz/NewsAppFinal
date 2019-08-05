@@ -1,41 +1,125 @@
-body {
-    background-color: dimgray;
-    min-height: 100vh;
+html { 
+    background: url("images/backgroundImage.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-#container {
-    align-content: center;
-    max-width: 1000px;
-    margin: auto;
-    background-image: url("images/newspaperBlur1.png");
-    background-repeat:repeat-y;
-    align-items: center;
-    min-height: 100vh;
+header {
+    position: fixed;
+    background-color: lightgray;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.uk-card {
-    margin: 50px 100px;
-}
-
-.loginBox {
-    margin:0px;
-    
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 40px;
 }
 
 #navButtons {
-    margin-left: 25px;
+    display: flex;
+    flex-direction: row;
+}
 
-    
+#NYTlogo {
+    width: 200px;
+    height: 40px;
+    position: fixed;
+}
+
+form {
+    width: 50vw;
+    margin-left: 210px;
+    margin-block-end: 0;
+}
+
+#searchBar {
+    min-height: 40px;
+}
+
+#dateSearchInput {
+    display: flex;
+    flex-direction: row;
+    width: 22vw;
+}
+
+#dateInput {
+    font-size: 12px;
+    width: 15vw;
+}
+
+#newsDeskSelection {
+    display: flex;
+    flex-direction: row;
+}
+
+#sectionName {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+}
+
+#submitSearchButton {
+    margin-left: 1vw;
+    background-color: gray;
+    color: white;
+    width: 10vw;
+    height: 25px;
+    border-radius: 5px;
+    margin: 0.5vw 0 0.5vw 0;
+}
+
+#submitSearchButton:hover {
+    background-color: white;
+    color: black;
+}
+
+#favoriteLink {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: auto;
+    margin-left: 1vw;
+    font-family: monospace;
+    font-size: 2vw;
+    color: black;
+}
+
+#favoriteLink:hover {
+    color: white;
+}
+
+#btnLogout{
+    margin-left: 3vw;
+    background-color: gray;
+    color: white;
+    width: 10vw;
+    height: 25px;
+    border-radius: 5px;
+    margin: 0.5vw 0 0.5vw 0;
+}
+
+#btnLogout:hover {
+    background-color: white;
+    color: black;
 }
 
 #displayData {
     text-align: center;
-    padding: 0px;
     background-color:rgb(77, 77, 77);
     color: white;
-    padding: 5px;
-    border-radius: 7px;
-    
+    padding: 0.5vw;
+}
+
+a {
+    text-decoration: none;
 }
 
 footer {
@@ -45,17 +129,283 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: row;
-    position: absolute;
+    position: fixed;
     bottom: 0%;
     left: 0%;
  }
+
  #footerSpan {
     margin-left: auto;
     margin-right: auto;
     align-content: space-evenly;
  }
 
- footer a  {
-     text-decoration: none;
+footer a {
+     color: gray;
  }
 
+#articleCountDisplay {
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+#articleDisplay {
+    border: 1px solid #A0A0A0;
+    background-color: #E8E8E8;
+    margin: 8vw 3vw 5vw 3vw;
+    height: auto;
+    min-height: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.relevantArticles {
+    background-color: white;
+    border-radius: 0px 5px 5px 5px;
+    margin: 2vw;
+    padding: 0.5vw;
+    flex-basis: 250px;
+    flex-grow: 1;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    transition: 0.25s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.relevantArticles:hover {
+    transform: scale(1.1);
+}
+
+.articleHeader {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.5vw;
+}
+
+.articleFavoriteButton {
+    font-size: 2vw;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.articleBody{
+    color: black;
+    display:flex;
+    flex-direction: column;
+}
+
+.articleHeadline {
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 0.5vw;
+}
+
+.articleByline {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 0.5vw;
+}
+
+.articleSnippet {
+    margin-bottom: 0.5vw;
+}
+
+.articleFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: gray;
+    bottom: 0%;
+}
+
+.noDataDiv {
+    position: absolute;
+    background-color: mistyrose;
+    width: 20%;
+    height: auto;
+    top: 30%;
+    left: 35%;
+    margin: 4vw auto 0 auto;
+    border-radius: 0px 5px 5px 5px;
+    border: 2px solid red;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: center;
+}
+
+.noDataDivMessage {
+    font-size: 3vw;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+@media only screen and (max-width: 791px) {
+
+nav {
+    flex-direction: column;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#dateInput {
+    width: 20vw;
+}
+
+#submitSearchButton {
+    font-size: 3vw;
+    width: 15vw;
+    height: 4vw;
+}
+
+#favoriteLink {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#btnLogout {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35vw;
+    height: auto;
+    font-size: 4vw;
+}
+
+#articleDisplay {
+    margin-bottom: 0;
+    min-height: 87%;
+}
+
+#otherButtons {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
+
+@media only screen and (max-width: 712px) {
+
+nav {
+    flex-direction: row;
+}
+
+#submitForm {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+}
+
+#searchBar {
+    top: 40px;
+    display: flex;
+    flex-direction : column;
+}
+
+#navButtons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 2vw;
+}
+
+#dateSearchInput {
+    width: 50vw;
+}
+
+#dateInput {
+    font-size: 3vw;
+    width: 34vw;
+}
+
+#newsDeskSelection {
+    width: 50vw;
+}
+
+#sectionName {
+    font-size: 3vw;
+}
+
+#submitSearchButton {
+    font-size: 4vw;
+    width: 45vw;
+    height: auto;
+}
+
+#otherButtons {
+    margin-top: 40px;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+nav {
+    flex-direction: column;
+}
+
+#submitForm {
+    margin: 0;
+    width: 100%;
+}
+
+#navButtons {
+    width: 100%;
+    margin-left: 5vw;
+    margin-right: auto;
+}
+
+#dateSearchInput {
+    width: 100vw;
+    font-size: 6vw;
+    margin-bottom: 2vw;
+}
+
+#dateInput {
+    font-size: 5vw;
+    width: 60vw;
+}
+
+#newsDeskSelection {
+    width: 100vw;
+}
+
+#newsDeskSelection {
+    font-size: 6vw;
+    margin-bottom: 2vw;
+}
+
+#sectionName {
+    font-size: 5vw;
+}
+
+#submitSearchButton {
+    font-size: 6vw;
+    width: 90vw;
+    height: auto;
+    margin-bottom: 2vw;
+}
+
+
+#otherButtons {
+    flex-direction: column;
+    margin-top : 0;
+}
+
+.articleFavoriteButton {
+    font-size: 4vw;
+}
+}
